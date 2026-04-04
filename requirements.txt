@@ -1,0 +1,23 @@
+# --- Core Application Framework ---
+flet>=0.84.0            # Interfaz de usuario multiplataforma (basada en Flutter)
+
+# --- Chess Logic & Engines ---
+python-chess>=1.11.0    # Motor de reglas, validación de movimientos y soporte FEN/PGN
+
+# --- Hardware Communication (Bluetooth Low Energy) ---
+#bleak==0.21.1           # Librería asíncrona para comunicación con el ESP32 (multiplataforma)
+
+# --- Data Handling & Utils ---
+pydantic>=2.12.0         # Validación de datos y esquemas para la configuración de la App
+
+# --- Testing & Quality (Development) ---
+pytest>=8.4.0           # Framework de testing unitario e integración
+pytest-asyncio>=1.3.0  # Soporte para tests asíncronos (necesario para Flet y Bleak)
+behave>=1.3.0           # Framework BDD para tests de comportamiento (Gherkin)
+playwright>=1.58
+black>=26.3.0           # Formateador de código automático (PEP 8)
+mypy>=1.19.0             # Verificador de tipos estáticos (Type Hinting)
+
+# --- Optionals, Utils ---
+rembg>=2.0.0
+Pillow>=12.1.0
