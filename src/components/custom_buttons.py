@@ -1,3 +1,5 @@
+from typing import Callable, Any
+
 import flet as ft
 from views.styles import COLOR_ACCENT
 
@@ -9,8 +11,8 @@ class OptionButton(ft.Container):
                  subtitle: str,
                  icon_image: str,
                  decor_image: str,
-                 on_click=None,
-                 data=None
+                 data: str,
+                 on_click: Callable[[Any], Any] | None =None,
                  ) -> None:
         super().__init__(content=ft.Row(controls=[ft.Image(src=icon_image,
                                                            width=75,

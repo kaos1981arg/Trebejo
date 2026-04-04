@@ -1,11 +1,9 @@
-import os
-
 import flet as ft
 from views.home_view import HomeView
 
 ASSETS_PATH = "../assets"
 
-def main(page: ft.Page):
+def main(page: ft.Page) -> None:
     page.title = "Trebejo"
     page.window.always_on_top = True
     page.scroll = ft.ScrollMode.ADAPTIVE
@@ -24,7 +22,7 @@ def main(page: ft.Page):
     }
 
     # 2. Función manejadora de cambios de ruta
-    def route_change(e):
+    def route_change(_: ft.RouteChangeEvent | None) -> None:
         page.views.clear()
         print("Route change")
 

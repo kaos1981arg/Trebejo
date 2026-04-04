@@ -1,9 +1,10 @@
 from playwright.sync_api import sync_playwright
+from behave.runner import Context
 import subprocess
 import time
 import os
 
-def before_all(context):
+def before_all(context: Context) -> None:
     # 1. Iniciamos el proceso de Flet en modo web (puerto 8550)
     # Esto evita el error de la pantalla gris al asegurar un entorno controlado
     context.flet_process = subprocess.Popen(
@@ -21,7 +22,7 @@ def before_all(context):
     context.browser = context.pw.chromium.launch(headless=False) # False para ver qué hace
     context.page = context.browser.new_page()
 
-def after_all(context):
+def after_all(context: Context)-> None:
     # Cerramos todo al finalizar
     context.browser.close()
     context.pw.stop()
