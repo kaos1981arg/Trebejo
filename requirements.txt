@@ -10,6 +10,14 @@ python-chess>=1.11.0    # Motor de reglas, validación de movimientos y soporte 
 # --- Data Handling & Utils ---
 pydantic>=2.12.0         # Validación de datos y esquemas para la configuración de la App
 
+# --- Vision Artificial ---
+ultralytics>=8.4
+opencv-python>=4.13
+
+# --- Maths and Graphics ---
+numpy>=2.4
+scipy>=1.17.0
+
 # --- Testing & Quality (Development) ---
 pytest>=8.4.0           # Framework de testing unitario e integración
 pytest-asyncio>=1.3.0  # Soporte para tests asíncronos (necesario para Flet y Bleak)
