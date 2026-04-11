@@ -17,6 +17,8 @@ opencv-python>=4.13
 # --- Maths and Graphics ---
 numpy>=2.4
 scipy>=1.17.0
+scipy-stubs>=1.17
+scikit-learn>=1.8
 
 # --- Testing & Quality (Development) ---
 pytest>=8.4.0           # Framework de testing unitario e integración
